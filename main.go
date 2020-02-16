@@ -10,10 +10,10 @@ import (
 
 type Header struct {
 	UserDataMaxSize uint32
-	HeaderOffset uint32
-	UserDataSize uint32
-	_ [5]byte
-	Starcraft2 [22]byte
+	HeaderOffset    uint32
+	UserDataSize    uint32
+	_               [5]byte
+	Starcraft2      [22]byte
 }
 
 func main() {
@@ -57,4 +57,3 @@ func readNextBytes(file *os.File, number int) []byte {
 
 	return bytes
 }
-
